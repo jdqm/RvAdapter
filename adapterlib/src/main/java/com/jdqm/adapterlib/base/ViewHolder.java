@@ -52,9 +52,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
     /**
      * 通过viewId获取控件
-     *
-     * @param viewId
-     * @return
      */
     public <T extends View> T getView(int viewId) {
         View view = mViews.get(viewId);
@@ -212,9 +209,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         return this;
     }
 
-    /**
-     * 关于事件的
-     */
     public ViewHolder setOnClickListener(int viewId,
                                          View.OnClickListener listener) {
         View view = getView(viewId);

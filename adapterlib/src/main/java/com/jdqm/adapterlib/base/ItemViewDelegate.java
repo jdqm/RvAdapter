@@ -1,6 +1,5 @@
 package com.jdqm.adapterlib.base;
 
-
 /**
  * Created by Jdqm on 2018-6-13.
  */
