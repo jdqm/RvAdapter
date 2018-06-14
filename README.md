@@ -1,13 +1,15 @@
 # RvAdapter
 万能 Adapter for RecyclerView.
 
+![Demo效果](https://raw.githubusercontent.com/jdqm/RvAdapter/master/demo.gif)
+
 # Download
 
 ```
 implementation 'com.jdqm.adapterlib:adapterlib:1.0.0'
 ```
 
-# 1.只有一种item viewType，使用 CommonAdapter，只需要实现 convert() 方法即可
+## 1.只有一种item viewType，使用 CommonAdapter，只需要实现 convert() 方法即可
 
 example
 
