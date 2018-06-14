@@ -28,4 +28,5 @@ dependencies {
     implementation project(':adapterlib')
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.android.support:design:27.1.1'
+//    implementation 'com.jdqm.adapterlib:adapterlib:1.0.0'
 }
