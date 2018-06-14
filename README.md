@@ -1,15 +1,14 @@
-# RvAdapter
-万能 Adapter for RecyclerView.
+## 万能 Adapter for RecyclerView.
 
 ![Demo效果](https://raw.githubusercontent.com/jdqm/RvAdapter/master/demo.gif)
 
-# Download
+## Download
 
 ```
 implementation 'com.jdqm.adapterlib:adapterlib:1.0.0'
 ```
 
-## 1.只有一种item viewType，使用 CommonAdapter，只需要实现 convert() 方法即可
+### 1.只有一种item viewType，使用 CommonAdapter，只需要实现 convert() 方法即可
 
 example
 
@@ -24,14 +23,15 @@ recyclerView.setAdapter(new CommonAdapter<BaseModel>(getContext(), R.layout.sing
         holder.setOnClickListener(R.id.itemView, new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), String.valueOf("个性电台" + (position + 1)), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), String.valueOf("个性电台" + (position + 1)), 
+                Toast.LENGTH_SHORT).show();
             }
         });
     }
 });
 ```
 
-## 2. 多种item viewType，只需要为每种viewType实现一个 ItemViewDelegate 即可。
+### 2. 多种item viewType，只需要为每种viewType实现一个 ItemViewDelegate 即可。
 
 example
 
@@ -46,7 +46,7 @@ public class MyMultiItemViewAdapter extends MultiItemTypeAdapter<BaseModel> {
 }
 ```
 
-## ItemViewDelegate 1
+### ItemViewDelegate 1
 
 ```
 public class RecommendArticleDelegate implements ItemViewDelegate<BaseModel> {
@@ -67,7 +67,7 @@ public class RecommendArticleDelegate implements ItemViewDelegate<BaseModel> {
 }
 ```
 
-## ItemViewDelegate 2
+### ItemViewDelegate 2
 
 ```
 public class RecommendMusicDelegate implements ItemViewDelegate<BaseModel> {
